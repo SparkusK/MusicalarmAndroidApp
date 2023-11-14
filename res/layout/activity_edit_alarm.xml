@@ -1,0 +1,159 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".EditAlarmActivity" >
+
+    <TimePicker
+        android:id="@+id/pickTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/alarmNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/alarm_name" />
+
+       <EditText
+            android:id="@+id/alarmNameText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/alarm_name_hint"
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/dailyScheduleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/daily_schedule_label" />
+
+    <LinearLayout
+        android:id="@+id/edit_alarm_layout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:showDividers="none" >
+
+        <ToggleButton
+            android:id="@+id/sunday"
+            android:layout_width="40dp"
+            android:background="@drawable/toggle_background_no"
+            android:layout_height="40dp"
+            android:text="S"
+            android:textOff="S"
+            android:textOn="S"
+            android:onClick="toggleClicked" />
+
+        <ToggleButton
+            android:id="@+id/monday"
+            android:layout_width="40dp"
+            android:background="@drawable/toggle_background_no"
+            android:layout_height="40dp"
+            android:text="M"
+            android:textOff="M"
+            android:textOn="M" 
+            android:onClick="toggleClicked" />
+
+        <ToggleButton
+            android:id="@+id/tuesday"
+            android:layout_width="40dp"
+            android:background="@drawable/toggle_background_no"
+            android:layout_height="40dp"
+            android:text="T"
+            android:textOff="T"
+            android:textOn="T"
+            android:onClick="toggleClicked" />
+
+        <ToggleButton
+            android:id="@+id/wednesday"
+            android:layout_width="40dp"
+            android:background="@drawable/toggle_background_no"
+            android:layout_height="40dp"
+            android:text="W"
+            android:textOff="W"
+            android:textOn="W"
+            android:onClick="toggleClicked" />
+
+        <ToggleButton
+            android:id="@+id/thursday"
+            android:layout_width="40dp"
+            android:background="@drawable/toggle_background_no"
+            android:layout_height="40dp"
+            android:text="T"
+            android:textOff="T"
+            android:textOn="T"
+            android:onClick="toggleClicked" />
+
+        <ToggleButton
+            android:id="@+id/friday"
+            android:layout_width="40dp"
+            android:background="@drawable/toggle_background_no"
+            android:layout_height="40dp"
+            android:text="F"
+            android:textOff="F"
+            android:textOn="F"
+            android:onClick="toggleClicked" />
+
+        <ToggleButton
+            android:id="@+id/saturday"
+            android:layout_width="40dp"
+            android:background="@drawable/toggle_background_no"
+            android:layout_height="40dp"
+            android:text="S"
+            android:textOff="S"
+            android:textOn="S"
+            android:onClick="toggleClicked" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginBottom="5dp" >
+
+        <TextView
+            android:id="@+id/allSongsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/all_songs_label" />
+
+        <Switch
+            android:id="@+id/allSongsSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textOn="Yes"
+            android:textOff="No" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/selectSongs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_songs_button" 
+        android:onClick="editPlaylist"
+        />
+
+    <Button
+        android:id="@+id/saveAlarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/action_save_alarm" 
+        />
+
+</LinearLayout>

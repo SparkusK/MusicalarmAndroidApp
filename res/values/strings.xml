@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MusicAlarm</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_new">New</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_edit_alarm">Edit Alarm</string>
+    <string name="title_activity_create_alarm">Create New Alarm</string>
+    <string name="title_activity_playlist">Select Playlist Songs</string>
+    <string name="select_songs">Select Songs</string>
+    <string name="alarm_name">Name:</string>
+    <string name="alarm_name_hint">Type an alarm name</string>
+    <string name="all_songs_label">Choose all songs?</string>
+    <string name="daily_schedule_label">Daily Schedule:</string>
+    <string name="select_songs_button">Select Playlist</string>
+    <string name="action_save_alarm">Save Alarm</string>
+    <string name="alarm_dialog_title">Choose an action for this alarm.</string>
+    <string name="playlist_save">Save Playlist</string>
+    <string name="title_activity_alarm_receiver">Alarm</string>
+
+</resources>

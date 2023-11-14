@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="alarm_dialog_array">
+        <item>Delete Alarm</item>
+        <item>Test Alarm</item>
+    </array>
+</resources>
